@@ -1,0 +1,235 @@
+h1 {
+    font-size: 72pt;
+    text-align: center;
+    background-color: rgb(255, 178, 147);
+    padding-bottom: 10pt;
+}
+
+h2 {
+    font-size: 24pt;
+}
+
+h3 {
+    font-size: 20pt;
+}
+
+img {
+    border: 3pt solid rgb(230, 230, 230);
+    border-radius: 20pt;
+    width: 50%;
+}
+
+div {
+    text-align: center;
+}
+
+#main_pic1 {
+    margin-bottom: 50pt;
+}
+
+#main_pic1, #main_pic2 {
+    width: 80%;
+    box-shadow: 0pt 5pt 5pt rgb(150, 150, 150);
+}
+
+.big_pic {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+#ingredients_head {
+    text-align: left;
+}
+
+.ingredients_text {
+    font-size: 16pt;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+
+.step_box, .ingredients{
+    border-radius: 20pt;
+    margin-top: 20pt;
+    margin-right: 100pt;
+    margin-left: 100pt;
+    padding-top: 20pt;
+    padding-left: 20pt;
+    padding-right: 20pt;
+    padding-bottom: 5pt;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0pt 5pt 5pt rgb(150, 150, 150);
+}
+
+#instruct_header {
+    text-align: center;
+    background-color: rgb(255, 178, 147);
+}
+
+.step_box_pic {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+#step {
+    justify-content: center;
+    font-size: 18pt;
+}
+
+#finished_pic {
+    width: 30%;
+    display: inline-block;
+}
+
+h5 {
+    font-size: 12pt;
+    background-color: rgb(255, 178, 147);
+    padding-top: 10pt;
+    padding-bottom: 10pt;
+}
+
+.source {
+    font-style: italic;
+    font-size: 18pt;
+}
+
+a:link {
+    color: blue;
+}
+
+a:hover {
+    color: crimson;
+}
+
+a:visited {
+    color: blueviolet;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 10% auto 20%;
+    grid-gap: 10px;
+}
+
+.grid_container > div {
+    font-size: 20pt;
+    border: 1pt solid grey;
+    background-color: aliceblue;
+}
+
+#header {
+    grid-column: 1 / span 3;
+}
+
+#menu {
+    grid-column: 1 / span 1;
+    padding-top: 20pt;
+}
+
+#menu > div {
+    padding-top: 10pt;
+    padding-bottom: 10pt;
+}
+
+#main {
+    grid-column: 2 / span 1;
+    padding-top: 20pt;
+}
+
+#ads {
+    grid-column: 3 / span 1;
+    padding-top: 20pt;
+}
+
+#ads > div > img {
+    width: 80%;
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+}
+
+#footer {
+    grid-column: 1 / span 3;
+}
+
+@media only screen and (max-width: 1100px){
+    .step_box, .ingredients {
+        margin-top: 20pt;
+        margin-left: 20pt;
+        margin-right: 20pt;
+    }
+
+    .grid_container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 7pt;
+    }
+
+    #header {
+        grid-column: 1 / span 2;
+    }
+
+    #menu {
+        grid-column: 1 / span 1;
+    }
+
+    #main {
+        grid-column: 2 / span 1;
+    }
+
+    #ads {
+        grid-column: 1 / span 2;
+    }
+
+    #footer {
+        grid-column: 1 / span 2;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    body {
+        background-color: honeydew;
+    }
+
+    .grid_container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 5pt;
+    }
+
+    #header{
+        grid-column: 1 / span 1;
+    }
+    
+    #menu{
+        grid-column: 1 / span 1;
+        padding-top: 3pt;
+    }
+    
+    #main{
+        grid-column: 1 / span 1;
+    }
+
+    #ads{
+        grid-column: 1 / span 1;
+    }
+
+    #footer{
+        grid-column: 1 / span 1;
+    }
+}
+
+button {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f1efda;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
